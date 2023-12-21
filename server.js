@@ -1,11 +1,11 @@
 const express = require('express');
+const app = express();
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 
 app.use(cors());
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 const notesFilePath = path.join(__dirname, './db/db.json');
 
